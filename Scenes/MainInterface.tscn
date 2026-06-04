@@ -1,9 +1,38 @@
 [gd_scene format=3 uid="uid://cyjaia2ifoqle"]
 
-[node name="MainInterface" type="Control" unique_id=2129411544]
+[node name="MainInterface" type="Control" unique_id=342381538]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=265083055]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+current_tab = 0
+tabs_position = 1
+clip_tabs = false
+
+[node name="Label" type="Label" parent="TabContainer" unique_id=276213927]
+layout_mode = 2
+text = "ASD"
+metadata/_tab_index = 0
+
+[node name="Label2" type="Label" parent="TabContainer" unique_id=897396052]
+visible = false
+layout_mode = 2
+text = "BSDSDF"
+metadata/_tab_index = 1
+
+[node name="Label3" type="Label" parent="TabContainer" unique_id=199536544]
+visible = false
+layout_mode = 2
+text = "ASFSAD"
+metadata/_tab_index = 2
